@@ -286,6 +286,8 @@ section {
 .main-image img {
     width: 100%;
     height: auto;
+    max-height: 85vh;
+    object-fit: contain;
     display: block;
 }
 
