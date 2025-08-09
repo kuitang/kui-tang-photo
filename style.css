@@ -247,18 +247,13 @@ section {
 }
 
 .nav-button {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: 1px solid #e0e0e0;
+    display: inline;
     font-size: 0.875rem;
-    transition: background-color 0.2s ease;
+    text-decoration: underline;
 }
 
 .nav-button:hover {
-    background-color: #f5f5f5;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .nav-button.prev {
@@ -472,13 +467,25 @@ footer {
     }
     
     .image-navigation {
-        flex-direction: column;
+        flex-wrap: wrap;
         gap: 1rem;
+        justify-content: center;
+    }
+    
+    .nav-button.prev {
+        margin-right: 0;
+    }
+    
+    .nav-button.next {
+        margin-left: 0;
     }
     
     .nav-button.back {
         position: static;
         transform: none;
+        order: -1;
+        width: 100%;
+        text-align: center;
     }
     
     .metadata-list {
